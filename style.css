@@ -1,0 +1,10 @@
+#fejlec {
+    font-size: 1.5em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+table.ranking {
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+}
