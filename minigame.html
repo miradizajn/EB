@@ -1,14 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EB 2021</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    <meta charset="utf-8" />
+    <title>Foosball Game</title>
+    <script src="js/SAT.js"></script>
+   <link rel="stylesheet" type="text/css" href="style.css" />
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -19,9 +16,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
-
 </head>
-
 <body>
     <div class="container-fluid"></div>
     <nav class="navbar navbar-expand-md bg-dark navbar-dark">
@@ -46,9 +41,38 @@
         </div>
     </nav>
     </div>
+<div id = "cont">
 
+    <div id ="startScreen">
+        <div id="title">FoosBall</div>
+        <button id="play" onclick="init()">PLAY</button>
+        <br><br><br>
+        <img src="img/help.png" height="100" width="150" id="help">
+        <br>
+        <span id ="instructions">(Use left and right arrow keys to play)</span>
+    </div>
+
+    <div id ="gameOverScreen">
+        <div id="title">FoosBall</div>
+        <button id="playagain" onclick="init()">PLAY AGAIN</button>
+        <br><br><br>
+    </div>
+
+
+    <canvas id="myCanvas" width="480" height="720"></canvas>
+    <div id="score">
+        <div id = "timer">
+            Time Left
+            <div id = "countdown">02:00</div>
+        </div>
+        <h3 id = "blue">Juventus </h3>
+        <div id="away">0</div>
+        <h3 id = "red">Liverpool</h3>
+        <div id="home">0</div>
+        <div id = "status"></div>
+    </div>
     
-    
+</div>
 </body>
-
+<script src="js/football.js"></script>
 </html>
