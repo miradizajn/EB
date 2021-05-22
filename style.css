@@ -8,3 +8,23 @@ table.ranking {
     border-collapse: collapse;
     width: 100%;
 }
+
+
+.tablepress {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    margin-bottom: 1em;
+    border: none;
+}
+
+caption {
+    background-color: #212529;
+}
+summary {
+    color: white;
+}
+
+#pé {
+    color: white;
+}
