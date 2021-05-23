@@ -24,9 +24,9 @@
 
 <body>
     <!--NAVIGATION-->
-    <div class="container-fluid"></div>
+    <div class="container-fluid" id="navigation"></div>
     <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
-        <a class="navbar-brand" href="index.html"><span id="fejlec" class="Normlkarakterstlus">Foci Eb 2021</span></a>
+        <a class="navbar-brand" href="#navigation"><span id="fejlec" class="Normlkarakterstlus">Foci Eb 2021</span></a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"></span>
@@ -38,10 +38,10 @@
                     <a class="nav-link" href="#csoportokfelirat"><span class="Normlkarakterstlu">Csoportok</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#merkozesek"><span class="Normlkarakterstlu">Mérközések</span></a>
+                    <a class="nav-link" href="#magyar"><span class="Normlkarakterstlu">Magyarország</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#magyar"><span class="Normlkarakterstlu">Magyarország</span></a>
+                    <a class="nav-link" href="#merkozesek"><span class="Normlkarakterstlu">Mérközések</span></a>
                 </li>
             </ul>
         </div>
@@ -461,7 +461,7 @@
                         pályája.
                         Az avatómérkőzését és az új aréna első válogatott labdarúgó mérkőzését 2019. november 15-én
                         rendezték a világsztárokkal fellépő Uruguay ellen.
-                        Az <strong>EB</strong> szempontjából fontos, hogy a Magyar meccsek közül 2 itt fog zajlani.
+                        Az <strong>EB</strong> szempontjából fontos, hogy a Magyar meccsek közül 3 itt fog zajlani.
                     </p>
                 </div>
                 <div id="carouselExampleIndicators" class="carousel slide col-7" data-ride="carousel">
@@ -495,11 +495,11 @@
 
         <div id="keretecske" class="m-3">
 
-            <h1 style="text-align: center;" class="mt-5 p-2">Magyarország Kerete</h1>
+            <h1 style="text-align: center;" class="mt-5 p-2" id="feher">Magyarország Kerete</h1>
             <img src="images/Névtelen.png" class="mx-auto d-block" id="keret">
             
             <a href="csapatepito/csapatepito.html" target="_blank">
-                <button class="button mx-auto d-block" ><span>Rakd össze a saját csapatod!</span></button>
+                <button class="button mx-auto d-block" id="lekerekitve"><span>Rakd össze a saját csapatod!</span></button>
             </a>
             
         </div>
@@ -527,7 +527,7 @@
         <caption>
             <details>
                 <summary>Segítség</summary>
-                <p id="pé">A fenti jegyárak euróban vannak megadva és jegyenként értendőek! A jegyek minimum párosával
+                <p id="pé" class="col-8">A fenti jegyárak euróban vannak megadva és jegyenként értendőek! A jegyek minimum párosával
                     garantáltak egymás mellé és itthon átadásra kerülnek!
                     A fenti jegyáron felül DHL díjként egyszeri 25 €/foglalás (egyszeri díj) fizetendő független a
                     jegyek darabszámától!</p>
